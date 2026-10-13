@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Triplos y Cuádruplos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Triplos y Cuádruplos</h1>
+
+    <section class="tarjeta">
+      <label for="operacion">Operación</label>
+      <input type="text" id="operacion" placeholder="Ejemplo: r = a + b / c * d">
+
+      <div class="botones">
+        <button id="btnCalcular" class="btn btn-principal">Calcular</button>
+        <button id="btnLimpiar" class="btn btn-secundario">Limpiar</button>
+      </div>
+
+      <div id="alerta" class="alerta oculto"></div>
+    </section>
+
+    <section id="resultados" class="tarjeta">
+      <h2>Resultado</h2>
+      <p id="resultado" class="resultado">Aquí aparecerá el resultado.</p>
+
+      <h2>Triplos</h2>
+      <div id="tablaTriplos"></div>
+
+      <h2>Cuádruplos</h2>
+      <div id="tablaCuadruplos"></div>
+    </section>
+  </main>
+
+  <script src="js/tokenizador.js"></script>
+  <script src="js/postfija.js"></script>
+  <script src="js/generador.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
