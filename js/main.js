@@ -17,7 +17,6 @@ function ocultarAlerta() {
   alerta.classList.add("oculto");
 }
 
-// Separa "r = a + b" en destino "r" y expresión "a + b"
 function separarAsignacion(texto) {
   const limpio = texto.trim();
   if (limpio === "") throw new Error("Escribe una operación.");
